@@ -7,3 +7,10 @@ body {
     min-height: 100vh;
     overflow-x: hidden;
 }
+
+footer, #footer {
+    .address {
+        float: right;
+    }
+}
+

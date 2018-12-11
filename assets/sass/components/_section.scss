@@ -13,10 +13,13 @@
 			color: _palette(fg-light);
 			position: relative;
 			margin: 0 0 (_size(element-margin) * 0.75) 0;
+			a {
+				font-weight: _font(weight-bold);
+			}
 		}
 
 		h2 + p {
-			font-size: 1.25em;
+			font-size: 1.75em;
 			margin-top: (_size(element-margin) * -0.5);
 		}
 

@@ -326,6 +326,10 @@
 		// Uniform.
 			.row.uniform#{$x} > * { padding: ($c * $multiplier) 0 0 ($c * $multiplier); }
 			.row.uniform#{$x} { margin: ($c * $multiplier * -1) 0 -1px ($c * $multiplier * -1); }
+		
+		// Flex.
+			.row.flex#{$x} > * { padding: ($c * $multiplier) 0 0 ($c * $multiplier); }
+			.row.flex#{$x} { margin: ($c * $multiplier * -1) 0 -1px ($c * $multiplier * -1); }
 
 	}
 
@@ -479,6 +483,57 @@
 
 					.row.uniform > * > :last-child {
 						margin-bottom: 0;
+					}
+
+					.row.flex {
+						display: flex;
+						flex-direction: row;
+
+						&.reverse {
+							flex-direction: row-reverse;
+						}
+
+						&.flex-start {
+							justify-content: flex-start;
+						}
+
+						&.flex-end {
+							justify-content: flex-end;
+						}
+
+						&.flex-center {
+							justify-content: center;
+						}
+
+						&.flex-between {
+							justify-content: space-between;
+						}
+
+						&.flex-around {
+							justify-content: space-around;
+						}
+
+						&.flex-evenly {
+							justify-content: space-evenly;
+						}
+
+						&.align-items-top {
+							align-items: flex-start;
+						}
+
+						&.align-items-bottom {
+							align-items: flex-end;
+						}
+
+						&.align-items-center {
+							align-items: center;
+						}
+
+						&.align-items-stretch {
+							align-items: stretch;
+						}
+
+
 					}
 
 				// Gutters (0%).

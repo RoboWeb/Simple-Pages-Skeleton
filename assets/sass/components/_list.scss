@@ -19,6 +19,8 @@
 
 		li {
 			padding-left: 0.5em;
+			margin-bottom: 0.5em;
+			font-size: 0.8em;
 		}
 
 		&.alt {
@@ -36,23 +38,21 @@
 			}
 		}
 
-		&.icons {
+		&.iconized {
 			cursor: default;
 			list-style: none;
-			padding-left: 0;
+			padding-left: 0;			
 
-			li {
-				display: inline-block;
-				padding: 0 1em 0 0;
+			li.ico-check {
+				margin-left: 1em;
 
-				&:last-child {
-					padding-right: 0;
-				}
-
-				.icon {
-					&:before {
-						font-size: 2em;
-					}
+				&:before {
+					content: "\f00c";
+					font-family: "Font Awesome 5 Free";
+					float: left;
+					margin-left: -1.5em;
+					color: _palette(fg);
+					-webkit-font-smoothing: antialiased;
 				}
 			}
 		}

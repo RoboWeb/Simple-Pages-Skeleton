@@ -4,10 +4,10 @@
 
 	"use strict";
 
-	//simple settings masked hello(a)dianabernat(dot)com
+	//simple settings masked biuro(a)beio(dot)pl
 	// use atob()
-	var emailHref = "bWFpbHRvOmhlbGxvQGRpYW5hYmVybmF0LmNvbQ==";
-	var emailText = "aGVsbG9AZGlhbmFiZXJuYXQuY29t";
+	var emailHref = "bWFpbHRvOmJpdXJvQGJlaW8ucGw=";
+	var emailText = "Yml1cm9AYmVpby5wbA==";
 
 	// Methods/polyfills.
 
@@ -35,14 +35,16 @@
 	window.addEventListener('load', function () {
 		$body.classList.remove('is-loading');
 
-		let $mainMail = document.querySelector('#mainMail');
-		$mainMail.setAttribute('href', atob(emailHref));
-		$mainMail.setAttribute('target', '_blank');
-		$mainMail.innerHTML = atob(emailText);
-
-		let $mailToo = document.querySelector('#mailToo');
-		$mailToo.setAttribute('href', atob(emailHref));
-		$mailToo.setAttribute('target', '_blank');
+		let $mails = document.querySelectorAll(".letters_here");
+		console.log($mails);
+		$mails.forEach(function (itm, indx) {
+			itm.setAttribute('href', atob(emailHref));
+			itm.setAttribute('target', '_blank');
+			itm.innerHTML = atob(emailText);
+		});
+		//$mainMail.setAttribute('href', atob(emailHref));
+		//$mainMail.setAttribute('target', '_blank');
+		//$m/ainMail.innerHTML = atob(emailText);
 	});
 
 
