@@ -1,9 +1,15 @@
 {
-	"name": "baseline",
-	"version": "3.0.1",
-	"description": "A simple boilerplate for new Skel projects.",
-	"keywords": [ "boilerplate", "template", "skel", "skeljs", "responsive" ],
-	"homepage": "http://skel.io",
+	"name": "dana bernat",
+	"version": "1.0.1",
+	"description": "A simple page.",
+	"keywords": [
+		"boilerplate",
+		"template",
+		"skel",
+		"skeljs",
+		"responsive"
+	],
+	"homepage": "http://dianaberant.com",
 	"license": "MIT",
-	"ignore": [ ]
+	"ignore": []
 }

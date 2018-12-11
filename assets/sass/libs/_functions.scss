@@ -55,9 +55,9 @@
  * Requires a media query to cap the value at B.
  */
 
-@function _between($from, $to, $fromWidth, $toWidth) {
+ @function _between($from, $to, $fromWidth, $toWidth) {
 	$slope: ($to - $from) / ($toWidth - $fromWidth);
 	$base: $from - $slope * $fromWidth;
   
 	@return calc(#{$base} + #{100vw * $slope});
-}
+  }

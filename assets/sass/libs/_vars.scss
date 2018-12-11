@@ -1,14 +1,13 @@
-// simple-pages-skeleton v0.0.1 | RoboWeb | GNU GENERAL PUBLIC LICENSE v3
 // skel-baseline v3.0.1 | (c) n33 | skel.io | MIT licensed
 
 // Breakpoints width.
-$breaks: (
-	xl:		1680px,
-	l:		1200px,
-	m:		992px,
-	s:		768px,
-	xs:		576px
-);
+	$breaks: (
+		xl:		1680px,
+		l:		1200px,
+		m:		992px,
+		s:		768px,
+		xs:		576px
+	);
 
 // Misc.
 	$misc: (
@@ -18,7 +17,8 @@ $breaks: (
 // Duration.
 	$duration: (
 		nav:				0.5s,
-		transition:			0.2s
+		transition:			0.3s,
+		long:				1s
 	);
 
 // Size.
@@ -33,14 +33,16 @@ $breaks: (
 	$font: (
 		family:				('Roboto', sans-serif),
 		family-fixed:		('Courier New', monospace),
-		weight:				normal,
-		weight-bold:		bold
+		weight:				400,
+		weight-bold:		700,
+		weight-black:		900,
 	);
 
 // Palette.
 	$palette: (
 		bg:					#fff,
-		fg:					#444,
+		lgray:				#f6f6f6,
+		fg:					#000,
 		fg-bold:			#555,
 		fg-light:			#bbb,
 		border:				rgba(144,144,144,0.25),
@@ -49,26 +51,16 @@ $breaks: (
 		border2-bg:			rgba(144,144,144,0.2),
 
 		accent1: (
-			bg:				#5AA6ED,
-			fg:				mix(#5AA6ED, #ffffff, 25%),
+			bg:				#000,
+			fg:				mix(#000, #ffffff, 25%),
 			fg-bold:		#ffffff,
-			fg-light:		mix(#5AA6ED, #ffffff, 40%),
+			fg-light:		mix(#000, #ffffff, 40%),
 			border:			rgba(255,255,255,0.25),
 			border-bg:		rgba(255,255,255,0.075),
 			border2:		rgba(255,255,255,0.5),
 			border2-bg:		rgba(255,255,255,0.2)
 		),
 
-		accent2: (
-			bg:				#5a5a5a,
-			fg:				mix(#5a5a5a, #ffffff, 25%),
-			fg-bold:		#ffffff,
-			fg-light:		mix(#5a5a5a, #ffffff, 40%),
-			border:			rgba(255,255,255,0.15),
-			border-bg:		rgba(255,255,255,0.075),
-			border2:		rgba(255,255,255,0.5),
-			border2-bg:		rgba(255,255,255,0.2)
-		)
 	);
 
 	/// Easings list
@@ -84,4 +76,5 @@ $breaks: (
 		ease-in-back: 		cubic-bezier(0.6, -0.28, 0.735, 0.045),		// easyInBack
 		ease-out-back: 		cubic-bezier(0.175, 0.885, 0.32, 1.275),	// easyOutBack
 		ease-in-out-back: 	cubic-bezier(0.68, -0.55, 0.265, 1.55)		// easyInOutBack
+
 	);
