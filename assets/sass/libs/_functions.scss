@@ -1,0 +1,63 @@
+// skel-baseline v3.0.1 | (c) n33 | skel.io | MIT licensed
+
+/// Gets a duration value.
+/// @param {string} $keys Key(s).
+/// @return {string} Value.
+@function _duration($keys...) {
+	@return val($duration, $keys...);
+}
+
+/// Gets a font value.
+/// @param {string} $keys Key(s).
+/// @return {string} Value.
+@function _font($keys...) {
+	@return val($font, $keys...);
+}
+
+/// Gets a misc value.
+/// @param {string} $keys Key(s).
+/// @return {string} Value.
+@function _misc($keys...) {
+	@return val($misc, $keys...);
+}
+
+/// Gets a palette value.
+/// @param {string} $keys Key(s).
+/// @return {string} Value.
+@function _palette($keys...) {
+	@return val($palette, $keys...);
+}
+
+/// Gets a size value.
+/// @param {string} $keys Key(s).
+/// @return {string} Value.
+@function _size($keys...) {
+	@return val($size, $keys...);
+}
+
+/// Gets a easing value.
+/// @param {string} $keys Key(s).
+/// @return {string} Value.
+@function _easing($keys...) {
+	@return val($easing, $keys...);
+}
+
+/// Gets a break points value.
+/// @param {string} $keys Key(s).
+/// @return {string} Value.
+@function _breaks($keys...) {
+	@return val($breaks, $keys...);
+}
+
+/**
+ * Computes a CSS calc function that betweens a value from
+ * A to B over viewport-width A to viewport-width B.
+ * Requires a media query to cap the value at B.
+ */
+
+@function _between($from, $to, $fromWidth, $toWidth) {
+	$slope: ($to - $from) / ($toWidth - $fromWidth);
+	$base: $from - $slope * $fromWidth;
+  
+	@return calc(#{$base} + #{100vw * $slope});
+}

@@ -1,0 +1,19 @@
+{
+    "name": "BEIO",
+    "short_name": "BEIO",
+    "icons": [
+        {
+            "src": "/images/favicons/android-chrome-192x192.png?v=2b06rajL8d",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/favicons/android-chrome-512x512.png?v=2b06rajL8d",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#180d69",
+    "background_color": "#180d69",
+    "display": "standalone"
+}

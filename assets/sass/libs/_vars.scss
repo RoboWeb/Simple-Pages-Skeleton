@@ -1,0 +1,87 @@
+// simple-pages-skeleton v0.0.1 | RoboWeb | GNU GENERAL PUBLIC LICENSE v3
+// skel-baseline v3.0.1 | (c) n33 | skel.io | MIT licensed
+
+// Breakpoints width.
+$breaks: (
+	xl:		1680px,
+	l:		1200px,
+	m:		992px,
+	s:		768px,
+	xs:		576px
+);
+
+// Misc.
+	$misc: (
+		z-index-base:		10000
+	);
+
+// Duration.
+	$duration: (
+		nav:				0.5s,
+		transition:			0.2s
+	);
+
+// Size.
+	$size: (
+		border-radius:		4px,
+		border-width:		1px,
+		element-height:		2.75em,
+		element-margin:		2em
+	);
+
+// Font.
+	$font: (
+		family:				('Roboto', sans-serif),
+		family-fixed:		('Courier New', monospace),
+		weight:				normal,
+		weight-bold:		bold
+	);
+
+// Palette.
+	$palette: (
+		bg:					#fff,
+		fg:					#444,
+		fg-bold:			#555,
+		fg-light:			#bbb,
+		border:				rgba(144,144,144,0.25),
+		border-bg:			rgba(144,144,144,0.075),
+		border2:			rgba(144,144,144,0.5),
+		border2-bg:			rgba(144,144,144,0.2),
+
+		accent1: (
+			bg:				#5AA6ED,
+			fg:				mix(#5AA6ED, #ffffff, 25%),
+			fg-bold:		#ffffff,
+			fg-light:		mix(#5AA6ED, #ffffff, 40%),
+			border:			rgba(255,255,255,0.25),
+			border-bg:		rgba(255,255,255,0.075),
+			border2:		rgba(255,255,255,0.5),
+			border2-bg:		rgba(255,255,255,0.2)
+		),
+
+		accent2: (
+			bg:				#5a5a5a,
+			fg:				mix(#5a5a5a, #ffffff, 25%),
+			fg-bold:		#ffffff,
+			fg-light:		mix(#5a5a5a, #ffffff, 40%),
+			border:			rgba(255,255,255,0.15),
+			border-bg:		rgba(255,255,255,0.075),
+			border2:		rgba(255,255,255,0.5),
+			border2-bg:		rgba(255,255,255,0.2)
+		)
+	);
+
+	/// Easings list
+	/// @var {list}
+	$easing: (
+		linear: 			cubic-bezier(0, 0, 1, 1), 					// linear
+		ease-in-sine: 		cubic-bezier(0.47, 0, 0.745, 0.715), 		// easyInSine
+		ease-out-sine: 		cubic-bezier(0.39, 0.575, 0.565, 1), 		// easyOutSine
+		ease-in-out-sine: 	cubic-bezier(0.445, 0.05, 0.55, 0.95), 		// easyInOutSine
+		ease-in-cubic: 		cubic-bezier(0.55, 0.055, 0.675, 0.19), 	// easyInCubic
+		ease-out-cubic: 	cubic-bezier(0.215, 0.61, 0.355, 1), 		// easyOutCubic
+		ease-in-out-cubic: 	cubic-bezier(0.645, 0.045, 0.355, 1),		// easyInOutCubic
+		ease-in-back: 		cubic-bezier(0.6, -0.28, 0.735, 0.045),		// easyInBack
+		ease-out-back: 		cubic-bezier(0.175, 0.885, 0.32, 1.275),	// easyOutBack
+		ease-in-out-back: 	cubic-bezier(0.68, -0.55, 0.265, 1.55)		// easyInOutBack
+	);
