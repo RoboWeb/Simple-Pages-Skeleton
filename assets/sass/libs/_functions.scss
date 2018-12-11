@@ -61,3 +61,10 @@
   
 	@return calc(#{$base} + #{100vw * $slope});
 }
+
+@function _betweenh($from, $to, $fromHeight, $toHeight) {
+	$slope: ($to - $from) / ($toHeight - $fromHeight);
+	$base: $from - $slope * $fromHeight;
+  
+	@return calc(#{$base} + #{100vh * $slope});
+}
