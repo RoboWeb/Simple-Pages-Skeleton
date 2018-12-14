@@ -2031,10 +2031,6 @@ footer#footer .address {
 #logoClipPath,
 #logoBeioShape {
   position: absolute;
-  -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.39, 0.575, 0.565, 1);
-  transition: -webkit-transform 0.3s cubic-bezier(0.39, 0.575, 0.565, 1);
-  transition: transform 0.3s cubic-bezier(0.39, 0.575, 0.565, 1);
-  transition: transform 0.3s cubic-bezier(0.39, 0.575, 0.565, 1), -webkit-transform 0.3s cubic-bezier(0.39, 0.575, 0.565, 1);
 }
 
 #logoBeioBuildBgImage {
@@ -2049,6 +2045,10 @@ footer#footer .address {
   right: -12vw;
   width: 47vw;
   height: auto;
+  -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.39, 0.575, 0.565, 1);
+  transition: -webkit-transform 0.3s cubic-bezier(0.39, 0.575, 0.565, 1);
+  transition: transform 0.3s cubic-bezier(0.39, 0.575, 0.565, 1);
+  transition: transform 0.3s cubic-bezier(0.39, 0.575, 0.565, 1), -webkit-transform 0.3s cubic-bezier(0.39, 0.575, 0.565, 1);
 }
 
 .content--canvas {
