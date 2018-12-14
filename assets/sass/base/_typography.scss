@@ -5,25 +5,25 @@
 	body, input, select, textarea {
 		color: _palette(fg);
 		font-family: _font(family);
-		font-size: 14pt;
+		font-size: 13pt;
 		font-weight: _font(weight);
-		line-height: 1.4;
+		line-height: 1.65;
 		letter-spacing: 0.8px;
 
 		@include breakpoint(xlarge) {
-			font-size: 13pt;
+			font-size: 12pt;
 		}
 
 		@include breakpoint(large) {
-			font-size: 13pt;
+			font-size: 12pt;
 		}
 
 		@include breakpoint(medium) {
-			font-size: 12pt;
+			font-size: 11pt;
 		}
 
 		@include breakpoint(small) {
-			font-size: 12pt;
+			font-size: 11pt;
 		}
 
 		@include breakpoint(xsmall) {
@@ -56,8 +56,8 @@
 
 	h1, h2, h3, h4, h5, h6 {
 		font-weight: _font(weight-bold);
-		line-height: 1.4;
-		margin: 0 0 (_size(element-margin) * 0.6) 0;
+		line-height: 1;
+		margin: 0 0 (_size(element-margin) * 0.5) 0;
 
 		a {
 			color: inherit;

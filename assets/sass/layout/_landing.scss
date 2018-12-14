@@ -2,15 +2,76 @@
 
 /* Landing */
 body {
-    padding: 8.8vh 0 5vh 0;
+    padding: 15.1vh 0 1vh 0;
     height: 100vh;
     min-height: 100vh;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
-footer, #footer {
+header#header,
+footer#footer,
+#main {
+    z-index: 100;
+    position: relative;
+}
+
+#main {
+    header {
+        h2 {
+            margin-bottom: 45px;
+        }
+
+        p {
+            margin-bottom: 40px;
+        }
+    }
+
+    .column {
+        padding-right: 4vw;
+    }
+}
+
+footer#footer {
     .address {
         float: right;
+        width: 76%;
     }
+}
+
+#logoBeioBuild,
+#logoBeioBuildBgImage,
+#logoBeioShape {
+    display: block;
+    position: fixed;
+    z-index: auto;
+}
+
+#logoBeioBuild {
+    top: -27vh;
+    right: -23vw;
+    width: 109vw;
+    height: auto;
+}
+
+#logoClipPath {
+    position: absolute;
+}
+
+#logoBeioBuildBgImage {
+    top: 0;
+    right: 0;
+    width: 1988px;
+    height: auto;
+}
+
+#logoBeioShape {
+    top: -19vh;
+    right: -12vw;
+    width: 47vw;
+    height: auto;
+}
+
+.content--canvas {
+    z-index: auto;
 }
 

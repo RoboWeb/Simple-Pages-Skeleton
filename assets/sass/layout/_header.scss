@@ -7,9 +7,10 @@ header#header {
         color: transparent;
         background-image: url("../images/beio-logo-full.svg");
         background-repeat: no-repeat;
-		background-size: contain;
+        background-size: contain;
+        background-position-x: 1.2em;
 		display: block;
 		height: 87px;
-		width: 357px;
+        width: 357px;
     }
 }

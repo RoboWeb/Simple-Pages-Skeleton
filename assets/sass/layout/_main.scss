@@ -3,7 +3,7 @@
 /* Main */
 
 	#main {
-		@include padding(4em, 0);
+		@include padding(0, 0, (6.4em,0,2em,0));
 
 		@include breakpoint(small) {
 			@include padding(3em, 0);

@@ -58,83 +58,83 @@ body {
 
 .container.\31 25\25		{
   width: 100%;
-  max-width: 100em;
-  min-width: 80em;
+  max-width: 100vw;
+  min-width: 80vw;
 }
 
 .container.\37 5\25			{
-  width: 60em;
+  width: 60vw;
 }
 
 .container.\35 0\25			{
-  width: 40em;
+  width: 40vw;
 }
 
 .container.\32 5\25			{
-  width: 20em;
+  width: 20vw;
 }
 
 .container {
-  width: 80em;
+  width: 80vw;
 }
 
 @media screen and (max-width: 1680px) {
   .container.\31 25\25		{
     width: 100%;
-    max-width: 100em;
-    min-width: 80em;
+    max-width: 100vw;
+    min-width: 80vw;
   }
   .container.\37 5\25			{
-    width: 60em;
+    width: 60vw;
   }
   .container.\35 0\25			{
-    width: 40em;
+    width: 40vw;
   }
   .container.\32 5\25			{
-    width: 20em;
+    width: 20vw;
   }
   .container {
-    width: 80em;
+    width: 80vw;
   }
 }
 
 @media screen and (max-width: 1200px) {
   .container.\31 25\25		{
     width: 100%;
-    max-width: 81.25em;
-    min-width: 65em;
+    max-width: 100vw;
+    min-width: 80vw;
   }
   .container.\37 5\25			{
-    width: 48.75em;
+    width: 60vw;
   }
   .container.\35 0\25			{
-    width: 32.5em;
+    width: 40vw;
   }
   .container.\32 5\25			{
-    width: 16.25em;
+    width: 20vw;
   }
   .container {
-    width: 65em;
+    width: 80vw;
   }
 }
 
 @media screen and (max-width: 992px) {
   .container.\31 25\25		{
     width: 100%;
-    max-width: 112.5%;
-    min-width: 90%;
+    max-width: 112.5vw;
+    min-width: 90vw;
   }
   .container.\37 5\25			{
-    width: 67.5%;
+    width: 67.5vw;
   }
   .container.\35 0\25			{
-    width: 45%;
+    width: 45vw;
   }
   .container.\32 5\25			{
-    width: 22.5%;
+    width: 22.5vw;
   }
   .container {
-    width: 90%;
+    width: 90vw;
   }
 }
 
@@ -1587,33 +1587,33 @@ body.is-loading *, body.is-loading *:before, body.is-loading *:after {
 body, input, select, textarea {
   color: #fff;
   font-family: "Roboto", sans-serif;
-  font-size: 14pt;
+  font-size: 13pt;
   font-weight: 400;
-  line-height: 1.4;
+  line-height: 1.65;
   letter-spacing: 0.8px;
 }
 
 @media screen and (max-width: 1680px) {
   body, input, select, textarea {
-    font-size: 13pt;
+    font-size: 12pt;
   }
 }
 
 @media screen and (max-width: 1200px) {
   body, input, select, textarea {
-    font-size: 13pt;
+    font-size: 12pt;
   }
 }
 
 @media screen and (max-width: 992px) {
   body, input, select, textarea {
-    font-size: 12pt;
+    font-size: 11pt;
   }
 }
 
 @media screen and (max-width: 768px) {
   body, input, select, textarea {
-    font-size: 12pt;
+    font-size: 11pt;
   }
 }
 
@@ -1649,8 +1649,8 @@ p {
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
-  line-height: 1.4;
-  margin: 0 0 0.48em 0;
+  line-height: 1;
+  margin: 0 0 0.4em 0;
 }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -1751,7 +1751,7 @@ section.special, article.special {
 header p {
   color: #eee;
   position: relative;
-  margin: 0 0 0.6em 0;
+  margin: 0 0 0.88em 0;
 }
 
 header p a {
@@ -1793,9 +1793,10 @@ ul {
 }
 
 ul li {
-  padding-left: 0.5em;
-  margin-bottom: 0.5em;
-  font-size: 0.8em;
+  padding-left: 1em;
+  margin-bottom: 0.7em;
+  font-size: 0.75em;
+  line-height: 1.5;
 }
 
 ul.alt {
@@ -1820,14 +1821,16 @@ ul.iconized {
 }
 
 ul.iconized li.ico-check {
-  margin-left: 1em;
+  margin-left: 1.9em;
 }
 
 ul.iconized li.ico-check:before {
   content: "\f00c";
   font-family: "Font Awesome 5 Free";
   float: left;
-  margin-left: -1.5em;
+  font-size: 1.5rem;
+  margin-left: -1.6em;
+  line-height: 1;
   color: #fff;
   -webkit-font-smoothing: antialiased;
 }
@@ -1947,6 +1950,7 @@ header#header #logo {
   background-image: url("../images/beio-logo-full.svg");
   background-repeat: no-repeat;
   background-size: contain;
+  background-position-x: 1.2em;
   display: block;
   height: 87px;
   width: 357px;
@@ -1954,7 +1958,7 @@ header#header #logo {
 
 /* Main */
 #main {
-  padding: 4em 0 3.2em 0;
+  padding: 6.4em 0 1.2em 0;
 }
 
 @media screen and (max-width: 768px) {
@@ -1965,7 +1969,7 @@ header#header #logo {
 
 /* Footer */
 #footer {
-  padding: 3em 0 2.2em 0;
+  padding: 3em 0 0.1em 0;
 }
 
 #footer h4, #footer p {
@@ -1980,13 +1984,70 @@ header#header #logo {
 
 /* Landing */
 body {
-  padding: 8.8vh 0 5vh 0;
+  padding: 15.1vh 0 1vh 0;
   height: 100vh;
   min-height: 100vh;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
-footer .address, #footer .address {
+header#header,
+footer#footer,
+#main {
+  z-index: 100;
+  position: relative;
+}
+
+#main header h2 {
+  margin-bottom: 45px;
+}
+
+#main header p {
+  margin-bottom: 40px;
+}
+
+#main .column {
+  padding-right: 4vw;
+}
+
+footer#footer .address {
   float: right;
+  width: 76%;
+}
+
+#logoBeioBuild,
+#logoBeioBuildBgImage,
+#logoBeioShape {
+  display: block;
+  position: fixed;
+  z-index: auto;
+}
+
+#logoBeioBuild {
+  top: -27vh;
+  right: -23vw;
+  width: 109vw;
+  height: auto;
+}
+
+#logoClipPath {
+  position: absolute;
+}
+
+#logoBeioBuildBgImage {
+  top: 0;
+  right: 0;
+  width: 1988px;
+  height: auto;
+}
+
+#logoBeioShape {
+  top: -19vh;
+  right: -12vw;
+  width: 47vw;
+  height: auto;
+}
+
+.content--canvas {
+  z-index: auto;
 }
 /*# sourceMappingURL=main.css.map */

@@ -16,15 +16,15 @@
 	@include skel-layout((
 		reset: 'full',
 		boxModel: 'border',
-		containers: 80em,
+		containers: 80vw,
 		grid: ( gutters: 2em ),
 		breakpoints: (
 			large: (
-				containers: 65em,
+				containers: 80vw,
 				grid: ( gutters: 1.5em )
 			),
 			medium: (
-				containers: 90%
+				containers: 90vw
 			),
 			small: (
 				containers: (90%, true),

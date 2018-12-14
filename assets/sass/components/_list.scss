@@ -18,9 +18,10 @@
 		padding-left: 1em;
 
 		li {
-			padding-left: 0.5em;
-			margin-bottom: 0.5em;
-			font-size: 0.8em;
+			padding-left: 1em;
+			margin-bottom: 0.7em;
+			font-size: 0.75em;
+			line-height: 1.5;
 		}
 
 		&.alt {
@@ -44,13 +45,15 @@
 			padding-left: 0;			
 
 			li.ico-check {
-				margin-left: 1em;
+				margin-left: 1.9em;
 
 				&:before {
 					content: "\f00c";
 					font-family: "Font Awesome 5 Free";
 					float: left;
-					margin-left: -1.5em;
+					font-size: 1.5rem;
+					margin-left: -1.6em;
+					line-height: 1;
 					color: _palette(fg);
 					-webkit-font-smoothing: antialiased;
 				}
