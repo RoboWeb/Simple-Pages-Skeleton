@@ -20,14 +20,14 @@
 		grid: ( gutters: 2em ),
 		breakpoints: (
 			large: (
-				containers: 80vw,
+				containers: 85vw,
 				grid: ( gutters: 1.5em )
 			),
 			medium: (
 				containers: 90vw
 			),
 			small: (
-				containers: (90%, true),
+				containers: (98%, true),
 				grid: ( gutters: 1.25em )
 			)
 		)

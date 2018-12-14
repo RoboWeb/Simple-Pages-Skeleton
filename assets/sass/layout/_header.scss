@@ -12,5 +12,18 @@ header#header {
 		display: block;
 		height: 87px;
         width: 357px;
+
+        @include breakpoint(xlarge) {
+            background-position-x: 0;
+            transform: translateX(0.4em);
+        }
+
+        @include breakpoint(large) {
+            transform: translateX(-1.2em);
+        }
+
+        @include breakpoint(medium) {
+            transform: translateX(3em);
+        }
     }
 }
