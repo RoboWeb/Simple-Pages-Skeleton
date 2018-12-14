@@ -9,6 +9,7 @@
 	const HALF_PI = 0.5 * PI;
 	const TAU = 2 * PI;
 	const TO_RAD = PI / 180;
+	const CHANGE_HUE = false;
 	const floor = n => n | 0;
 	const rand = n => n * random();
 	const randIn = (min, max) => rand(max - min) + min;
@@ -24,7 +25,7 @@
 	const lerp = (n1, n2, speed) => (1 - speed) * n1 + speed * n2;
 
 	// shift
-	const circleCount = 40;//150;
+	const circleCount = 120;//150;
 	const circlePropCount = 8;
 	const circlePropsLength = circleCount * circlePropCount;
 	const baseSpeed = 0.05;//0.1;
@@ -37,7 +38,7 @@
 	const xOff = 0.00015;
 	const yOff = 0.00015;
 	const zOff = 0.015;//0.0015;
-	const blurPower = 55;
+	const blurPower = 100;
 	const backgroundColor = 'hsla(248,78%,16%,1)';
 
 	let container;
@@ -81,15 +82,15 @@
 		ttl = baseTTL + rand(rangeTTL);
 		radius = baseRadius + rand(rangeRadius);
 		hue = baseHue + n * rangeHue;
-		console.log(i, y, canvas.a.height);
+
 		circleProps.set([x, y, vx, vy, life, ttl, radius, hue], i);
 	}
 
 	function randomYinZone() {
 		let y, firstZone, secondZone, zoneSize = canvas.a.height / 4;
 
-		firstZone = randIn(0, zoneSize);
-		secondZone = randIn(zoneSize * 3, canvas.a.height);
+		firstZone = randIn(0, zoneSize - zoneSize / 3);
+		secondZone = randIn((zoneSize * 3) + zoneSize / 3, canvas.a.height);
 
 		return Math.random() > 0.5 ? firstZone : secondZone;
 	}
@@ -97,7 +98,7 @@
 	function updateCircles() {
 		let i;
 
-		// baseHue++;
+		if (CHANGE_HUE) baseHue++;
 
 		for (i = 0; i < circlePropsLength; i += circlePropCount) {
 			updateCircle(i);
@@ -160,6 +161,11 @@
 			left: 0;
 			width: 100vw;
 			height: 100vh;
+			filter: blur(55px);
+  			-webkit-filter: blur(${blurPower}px);
+  			-moz-filter: blur(${blurPower}px);
+  			-o-filter: blur(${blurPower}px);
+  			-ms-filter: blur(${blurPower}px);
 		`;
 		container.appendChild(canvas.b);
 		ctx = {
@@ -184,7 +190,7 @@
 
 	function render() {
 		ctx.b.save();
-		ctx.b.filter = 'blur(' + blurPower + 'px)';//'blur(50px)';
+		//ctx.b.filter = 'blur(' + blurPower + 'px)';//'blur(50px)';
 		ctx.b.drawImage(canvas.a, 0, 0);
 		ctx.b.restore();
 	}
@@ -216,6 +222,8 @@
 
 	// Vars.
 	var $body = document.querySelector('body');
+	var logoShape1 = document.getElementById('logoClipPath');
+	var logoShape2 = document.getElementById('logoBeioShape');
 
 	// Breakpoints.
 	skel.breakpoints({
@@ -233,23 +241,21 @@
 		$body.classList.remove('is-loading');
 
 		let $mails = document.querySelectorAll(".letters_here");
-		// console.log($mails);
+
 		$mails.forEach(function (itm, indx) {
 			itm.setAttribute('href', atob(emailHref));
 			itm.setAttribute('target', '_blank');
 			itm.innerHTML = atob(emailText);
 		});
-		//$mainMail.setAttribute('href', atob(emailHref));
-		//$mainMail.setAttribute('target', '_blank');
-		//$m/ainMail.innerHTML = atob(emailText);
+
 	});
 
 
 	// Event: Hide nav on body click/tap.
-	addEventsListener($body, 'click touchend', function (event) {
+	addEventsListener($body, 'mousemove', function (event) {
 
-
-		//$nav.classList.remove('visible');
+		logoShape1.setAttribute('style', `transform: translate(${event.clientX / -100}px, ${event.clientY / -60}px);`);
+		logoShape2.setAttribute('style', `transform: translate(${event.clientX / -25}px, ${event.clientY / -15}px);`);
 	});
 
 

@@ -1987,7 +1987,7 @@ body {
   padding: 15.1vh 0 1vh 0;
   height: 100vh;
   min-height: 100vh;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 header#header,
@@ -2015,8 +2015,7 @@ footer#footer .address {
 }
 
 #logoBeioBuild,
-#logoBeioBuildBgImage,
-#logoBeioShape {
+#logoBeioBuildBgImage {
   display: block;
   position: fixed;
   z-index: auto;
@@ -2029,8 +2028,13 @@ footer#footer .address {
   height: auto;
 }
 
-#logoClipPath {
+#logoClipPath,
+#logoBeioShape {
   position: absolute;
+  -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.39, 0.575, 0.565, 1);
+  transition: -webkit-transform 0.3s cubic-bezier(0.39, 0.575, 0.565, 1);
+  transition: transform 0.3s cubic-bezier(0.39, 0.575, 0.565, 1);
+  transition: transform 0.3s cubic-bezier(0.39, 0.575, 0.565, 1), -webkit-transform 0.3s cubic-bezier(0.39, 0.575, 0.565, 1);
 }
 
 #logoBeioBuildBgImage {
