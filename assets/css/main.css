@@ -141,40 +141,40 @@ body {
 @media screen and (max-width: 768px) {
   .container.\31 25\25		{
     width: 100%;
-    max-width: 122.5%;
-    min-width: 98%;
+    max-width: 118.75%;
+    min-width: 95%;
   }
   .container.\37 5\25			{
-    width: 73.5%;
+    width: 71.25%;
   }
   .container.\35 0\25			{
-    width: 49%;
+    width: 47.5%;
   }
   .container.\32 5\25			{
-    width: 24.5%;
+    width: 23.75%;
   }
   .container {
-    width: 98% !important;
+    width: 95% !important;
   }
 }
 
 @media screen and (max-width: 576px) {
   .container.\31 25\25		{
     width: 100%;
-    max-width: 122.5%;
-    min-width: 98%;
+    max-width: 118.75%;
+    min-width: 95%;
   }
   .container.\37 5\25			{
-    width: 73.5%;
+    width: 71.25%;
   }
   .container.\35 0\25			{
-    width: 49%;
+    width: 47.5%;
   }
   .container.\32 5\25			{
-    width: 24.5%;
+    width: 23.75%;
   }
   .container {
-    width: 98% !important;
+    width: 95% !important;
   }
 }
 
@@ -557,6 +557,10 @@ body {
   margin-left: 8.3333333333%;
 }
 
+.hide {
+  display: none;
+}
+
 @media screen and (max-width: 1680px) {
   .row > * {
     padding: 0 0 0 2em;
@@ -754,6 +758,9 @@ body {
   }
   .\-1u\28xlarge\29 {
     margin-left: 8.3333333333%;
+  }
+  .hide\28xlarge\29 {
+    display: none;
   }
 }
 
@@ -955,6 +962,9 @@ body {
   .\-1u\28large\29 {
     margin-left: 8.3333333333%;
   }
+  .hide\28large\29 {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -1154,6 +1164,9 @@ body {
   }
   .\-1u\28medium\29 {
     margin-left: 8.3333333333%;
+  }
+  .hide\28medium\29 {
+    display: none;
   }
 }
 
@@ -1355,6 +1368,9 @@ body {
   .\-1u\28small\29 {
     margin-left: 8.3333333333%;
   }
+  .hide\28small\29 {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -1555,6 +1571,9 @@ body {
   .\-1u\28xsmall\29 {
     margin-left: 8.3333333333%;
   }
+  .hide\28xsmall\29 {
+    display: none;
+  }
 }
 
 /* Basic */
@@ -1581,6 +1600,15 @@ body.is-loading *, body.is-loading *:before, body.is-loading *:after {
   animation: none !important;
   -webkit-transition: none !important;
   transition: none !important;
+}
+
+@media screen and (max-width: 576px) {
+  .row.flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 /* Type */
@@ -1660,6 +1688,18 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 
 h2 {
   font-size: 2.75em;
+}
+
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 2.5em;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  h2 {
+    font-size: 2em;
+  }
 }
 
 h3 {
@@ -1752,6 +1792,7 @@ header p {
   color: #eee;
   position: relative;
   margin: 0 0 0.88em 0;
+  line-height: 1.3;
 }
 
 header p a {
@@ -1978,6 +2019,30 @@ header#header #logo {
   }
 }
 
+@media screen and (max-width: 768px) {
+  header#header #logo {
+    -webkit-transform: translateX(1.5em);
+            transform: translateX(1.5em);
+  }
+}
+
+@media screen and (max-width: 576px) {
+  header#header #logo {
+    min-width: 80vw;
+    max-width: 90vw;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    margin: 0 auto;
+    background-position: center;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  header#header h1 {
+    text-align: center;
+  }
+}
+
 /* Main */
 #main {
   padding: 6.4em 0 1.2em 0;
@@ -2012,6 +2077,12 @@ body {
   overflow-x: hidden;
 }
 
+@media screen and (max-width: 768px) {
+  body {
+    padding: 7vh 0 1vh 0;
+  }
+}
+
 header#header,
 footer#footer,
 #main {
@@ -2031,9 +2102,22 @@ footer#footer,
   padding-right: 4vw;
 }
 
+@media screen and (max-width: 1200px) {
+  #main .column.left {
+    margin-bottom: 2em;
+  }
+}
+
 footer#footer .address {
   float: right;
   width: 76%;
+}
+
+@media screen and (max-width: 576px) {
+  footer#footer .address {
+    float: left;
+    width: 100%;
+  }
 }
 
 #logoBeioBuild,
@@ -2048,6 +2132,21 @@ footer#footer .address {
   right: -23vw;
   width: 109vw;
   height: auto;
+}
+
+@media screen and (max-width: 992px) {
+  #logoBeioBuild {
+    top: unset;
+    bottom: 0;
+    right: -22vw;
+    opacity: 0.6;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #logoBeioBuild {
+    bottom: -10%;
+  }
 }
 
 #logoClipPath,
@@ -2071,6 +2170,22 @@ footer#footer .address {
   transition: -webkit-transform 0.3s cubic-bezier(0.39, 0.575, 0.565, 1);
   transition: transform 0.3s cubic-bezier(0.39, 0.575, 0.565, 1);
   transition: transform 0.3s cubic-bezier(0.39, 0.575, 0.565, 1), -webkit-transform 0.3s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+@media screen and (max-width: 992px) {
+  #logoBeioShape {
+    position: fixed;
+    top: unset;
+    bottom: -10%;
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #logoBeioShape {
+    right: unset;
+    left: -10vw;
+  }
 }
 
 .content--canvas {

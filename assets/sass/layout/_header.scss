@@ -25,5 +25,23 @@ header#header {
         @include breakpoint(medium) {
             transform: translateX(3em);
         }
+
+        @include breakpoint(small) {
+            transform: translateX(1.5em);
+        }
+
+        @include breakpoint(xsmall) {
+            min-width: 80vw;
+            max-width: 90vw;
+            transform: translateX(0);
+            margin: 0 auto;
+            background-position: center;
+        }
+    }
+
+    h1 {
+        @include breakpoint(xsmall) {
+            text-align: center;
+        }
     }
 }

@@ -13,6 +13,7 @@
 			color: _palette(fg-light);
 			position: relative;
 			margin: 0 0 (_size(element-margin) * 1.1) 0;
+			line-height: 1.3;
 			a {
 				font-weight: _font(weight-bold);
 			}

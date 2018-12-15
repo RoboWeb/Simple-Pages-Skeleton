@@ -6,6 +6,10 @@ body {
     height: 100vh;
     min-height: 100vh;
     overflow-x: hidden;
+
+    @include breakpoint(small) {
+        padding: 7vh 0 1vh 0;
+    }
 }
 
 header#header,
@@ -29,12 +33,27 @@ footer#footer,
     .column {
         padding-right: 4vw;
     }
+
+    @include breakpoint(large) {
+        .column {
+            &.left {
+                margin-bottom: 2em;
+            }
+        }
+    }
 }
 
 footer#footer {
     .address {
         float: right;
         width: 76%;
+    }
+
+    @include breakpoint(xsmall) {
+        .address {
+            float: left;
+            width: 100%;
+        }
     }
 }
 
@@ -50,6 +69,17 @@ footer#footer {
     right: -23vw;
     width: 109vw;
     height: auto;
+
+    @include breakpoint(medium) {
+        top: unset;
+        bottom: 0;
+        right: -22vw;
+        opacity: 0.6;
+    }
+
+    @include breakpoint(small) {
+        bottom: -10%;
+    }
 }
 
 #logoClipPath,
@@ -71,6 +101,18 @@ footer#footer {
     width: 47vw;
     height: auto;
     @include vendor('transition', 'transform #{_duration(transition)} #{_easing(ease-out-sine)}');
+
+    @include breakpoint(medium) {
+        position: fixed;
+        top: unset;
+        bottom: -10%;
+        right: 0;
+    }
+
+    @include breakpoint(small) {
+        right: unset;
+        left: -10vw;
+    }
 }
 
 .content--canvas {
