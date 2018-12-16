@@ -1,5 +1,5 @@
 {
-	"name": "dana bernat",
+	"name": "beio",
 	"version": "1.0.1",
 	"description": "A simple page.",
 	"keywords": [
@@ -9,7 +9,7 @@
 		"skeljs",
 		"responsive"
 	],
-	"homepage": "http://dianaberant.com",
+	"homepage": "http://beio.pl",
 	"license": "MIT",
 	"ignore": []
 }
